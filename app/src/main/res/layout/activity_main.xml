@@ -7,21 +7,22 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/multiply"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="284dp"
         android:text="×"
         android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/divide"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="276dp"
+        android:layout_marginStart="232dp"
         android:layout_marginTop="284dp"
         android:text="÷"
         android:textSize="60sp"
@@ -29,48 +30,62 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/subtract"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="180dp"
         android:text="−"
         android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/valTwo"
         android:layout_width="142dp"
         android:layout_height="44dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter Second Val"
+        android:hint="Enter Second Val"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/addButton"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="180dp"
+        android:onClick="findSum"
         android:text="+"
         android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/valOne"
         android:layout_width="142dp"
         android:layout_height="44dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter First Val"
+        android:hint="Enter First Val"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="144dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="444dp"
+        android:hint="result"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
