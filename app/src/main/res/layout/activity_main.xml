@@ -6,71 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/multiply"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/dark_blue"
+        android:onClick="findProd"
         android:text="×"
         android:textSize="60sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
         android:id="@+id/divide"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="184dp"
+        android:backgroundTint="@color/grey"
+        android:onClick="findQuotient"
         android:text="÷"
         android:textSize="60sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/subtract"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="184dp"
+        android:backgroundTint="@color/grey"
+        android:onClick="findDiff"
         android:text="−"
         android:textSize="60sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/valTwo"
         android:layout_width="142dp"
         android:layout_height="44dp"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="Enter Second Val"
         android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="108dp"
         android:layout_height="102dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="@color/dark_blue"
         android:onClick="findSum"
         android:text="+"
         android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#ECE4E4"
         tools:ignore="OnClick" />
 
     <EditText
         android:id="@+id/valOne"
         android:layout_width="142dp"
         android:layout_height="44dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Enter First Val"
         android:inputType="number"
@@ -79,12 +87,12 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="144dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="444dp"
-        android:hint="result"
-        android:inputType="numberDecimal"
+        android:layout_width="137dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="256dp"
+        android:hint="Answer"
+        android:inputType="number"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
