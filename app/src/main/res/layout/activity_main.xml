@@ -25,7 +25,7 @@
         android:layout_width="108dp"
         android:layout_height="102dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="264dp"
         android:backgroundTint="@color/grey"
         android:onClick="findQuotient"
         android:text="÷"
@@ -38,7 +38,7 @@
         android:layout_width="108dp"
         android:layout_height="102dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="264dp"
         android:backgroundTint="@color/grey"
         android:onClick="findDiff"
         android:text="−"
@@ -48,12 +48,12 @@
 
     <EditText
         android:id="@+id/valTwo"
-        android:layout_width="142dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Enter Second Val"
+        android:hint="Number "
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -75,26 +75,40 @@
 
     <EditText
         android:id="@+id/valOne"
-        android:layout_width="142dp"
-        android:layout_height="44dp"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Enter First Val"
+        android:hint="Number"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="137dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="256dp"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="412dp"
         android:hint="Answer"
-        android:inputType="number"
-        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/power"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="364dp"
+        android:onClick="findPower"
+        android:backgroundTint="@color/black"
+        android:text="^"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtract" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
